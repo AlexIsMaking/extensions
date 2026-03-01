@@ -1,6 +1,6 @@
 # shiori.sh Changelog
 
-## [0.1.1] - 2026-03-01
+## [0.1.1] - {PR_MERGE_DATE}
 
 - Add action to update link details
 

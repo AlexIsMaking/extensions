@@ -271,12 +271,6 @@ export default function SearchLinks() {
             <ActionPanel>
               <ActionPanel.Section>
                 <Action.OpenInBrowser title="Open in Browser" url={link.url} />
-                <Action.Push
-                  title="Edit Title & Summary"
-                  icon={Icon.Pencil}
-                  shortcut={{ modifiers: ["cmd"], key: "e" }}
-                  target={<EditLinkForm link={link} onSave={(values) => handleEditDetails(link, values)} />}
-                />
                 <Action.CopyToClipboard
                   title="Copy URL"
                   content={link.url}
@@ -289,6 +283,12 @@ export default function SearchLinks() {
                     shortcut={{ modifiers: ["cmd", "shift"], key: "c" }}
                   />
                 )}
+                <Action.Push
+                  title="Edit Title & Summary"
+                  icon={Icon.Pencil}
+                  shortcut={{ modifiers: ["cmd"], key: "e" }}
+                  target={<EditLinkForm link={link} onSave={(values) => handleEditDetails(link, values)} />}
+                />
               </ActionPanel.Section>
 
               <ActionPanel.Section>
